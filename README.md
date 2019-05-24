@@ -3,6 +3,7 @@
 This example is split up into snapshots.
 
 ## lbase #######################################################################
+    ssh root@0.0.0.0
     ln -sfn /usr/share/zoneinfo/UTC /etc/localtime
     localectl set-locale LANG=en_US.UTF-8
     echo 'linuxday' > /etc/hostname
@@ -18,6 +19,8 @@ This example is split up into snapshots.
     poweroff
 
 ## ldocker #####################################################################
+    ssh username@0.0.0.0
+    su -
     yum install -y yum-utils device-mapper-persistent-data lvm2
     yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
     yum install docker-ce-18.09.1 docker-ce-cli-18.09.1 containerd.io
