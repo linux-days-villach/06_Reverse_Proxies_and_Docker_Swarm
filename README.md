@@ -33,10 +33,6 @@ This example is split up into snapshots.
     su -
     docker swarm init --advertise-addr 0.0.0.0
     yum install git
-    git clone https://thedifferent@bitbucket.org/thedifferent/dev-server-root-.ssh.git /root/.ssh
-    chmod -v 700 /root/.ssh
-    chmod -Rv 644 /root/.ssh/*
-    chmod -Rv 600 /root/.ssh/id_rsa
     git clone https://gist.github.com/2b3bfd8ff886015bbce8.git /tmp/docker-shell
     install /tmp/docker-shell/docker-shell /usr/local/sbin/
     rm -rf /tmp/docker-shell
